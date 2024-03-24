@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "transaction": "Apple",
+    "price": 999.95,
+    "date": "May 30, 2024",
+    "location": "1004 Fanshawe Boulevard, London ON",
+    "item": "iPad Air"
+  },
+  {
+    "id": 2,
+    "transaction": "Samsung",
+    "price": 899.99,
+    "date": "June 15, 2024",
+    "location": "2103 Sunset Avenue, Los Angeles CA",
+    "item": "Galaxy Tab S8"
+  },
+  {
+    "id": 3,
+    "transaction": "Microsoft",
+    "price": 1199.99,
+    "date": "July 5, 2024",
+    "location": "4501 Market Street, San Francisco CA",
+    "item": "Surface Pro 8"
+  },
+  {
+    "id": 4,
+    "transaction": "Google",
+    "price": 799.95,
+    "date": "August 20, 2024",
+    "location": "8022 Broadway Street, New York NY",
+    "item": "Pixelbook Go"
+  },
+  {
+    "id": 5,
+    "transaction": "Dell",
+    "price": 1099.99,
+    "date": "September 10, 2024",
+    "location": "3031 Elm Street, Chicago IL",
+    "item": "XPS 13"
+  },
+  {
+    "id": 6,
+    "transaction": "HP",
+    "price": 749.99,
+    "date": "October 5, 2024",
+    "location": "7001 Maple Avenue, Houston TX",
+    "item": "HP Spectre x360"
+  },
+  {
+    "id": 7,
+    "transaction": "Lenovo",
+    "price": 899.95,
+    "date": "November 12, 2024",
+    "location": "502 Pine Street, Seattle WA",
+    "item": "ThinkPad X1 Carbon"
+  },
+  {
+    "id": 8,
+    "transaction": "Asus",
+    "price": 799.99,
+    "date": "December 3, 2024",
+    "location": "6001 Oak Lane, Philadelphia PA",
+    "item": "ZenBook Pro Duo"
+  },
+  {
+    "id": 9,
+    "transaction": "Acer",
+    "price": 599.95,
+    "date": "January 8, 2025",
+    "location": "1000 Cedar Court, Phoenix AZ",
+    "item": "Swift 5"
+  },
+  {
+    "id": 10,
+    "transaction": "Razer",
+    "price": 1299.99,
+    "date": "February 20, 2025",
+    "location": "1502 Walnut Street, Boston MA",
+    "item": "Razer Blade 15"
+  },
+  {
+    "id": 11,
+    "transaction": "Huawei",
+    "price": 899.95,
+    "date": "March 15, 2025",
+    "location": "4002 Pine Tree Lane, Miami FL",
+    "item": "MateBook X Pro"
+  },
+  {
+    "id": 12,
+    "transaction": "Sony",
+    "price": 1099.99,
+    "date": "April 5, 2025",
+    "location": "2503 Cherry Avenue, Atlanta GA",
+    "item": "VAIO Z"
+  },
+  {
+    "id": 13,
+    "transaction": "LG",
+    "price": 999.99,
+    "date": "May 22, 2025",
+    "location": "3501 Magnolia Drive, Dallas TX",
+    "item": "LG Gram 17"
+  },
+  {
+    "id": 14,
+    "transaction": "Toshiba",
+    "price": 799.95,
+    "date": "June 10, 2025",
+    "location": "5500 Willow Lane, Denver CO",
+    "item": "Dynabook Portégé X30L"
+  },
+  {
+    "id": 15,
+    "transaction": "Xiaomi",
+    "price": 699.99,
+    "date": "July 18, 2025",
+    "location": "2004 Spruce Avenue, San Diego CA",
+    "item": "Mi Notebook Pro"
+  },
+  {
+    "id": 16,
+    "transaction": "MSI",
+    "price": 1199.95,
+    "date": "August 5, 2025",
+    "location": "9003 Pinecone Road, Minneapolis MN",
+    "item": "GS66 Stealth"
+  },
+  {
+    "id": 17,
+    "transaction": "Alienware",
+    "price": 1499.99,
+    "date": "September 20, 2025",
+    "location": "7502 Maplewood Drive, Detroit MI",
+    "item": "Alienware Area-51m"
+  },
+  {
+    "id": 18,
+    "transaction": "Fujitsu",
+    "price": 999.95,
+    "date": "October 15, 2025",
+    "location": "8201 Oakwood Avenue, Portland OR",
+    "item": "Lifebook U939X"
+  },
+  {
+    "id": 19,
+    "transaction": "Panasonic",
+    "price": 899.99,
+    "date": "November 8, 2025",
+    "location": "5005 Elmwood Lane, Indianapolis IN",
+    "item": "Toughbook 55"
+  },
+  {
+    "id": 20,
+    "transaction": "Vaio",
+    "price": 1099.95,
+    "date": "December 25, 2025",
+    "location": "7002 Chestnut Street, Orlando FL",
+    "item": "SX14"
+  },
+  {
+    "id": 21,
+    "transaction": "Microsoft",
+    "price": 1299.99,
+    "date": "January 10, 2026",
+    "location": "9601 Willow Street, Austin TX",
+    "item": "Surface Laptop 4"
+  }
+]
