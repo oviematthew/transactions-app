@@ -22,6 +22,6 @@
 
 ### Screenshots
 
-<img src="./assets/screenshot.png" alt="screenshot">
-<img src="./assets/screenshot-2.png" alt="screenshot">
-<img src="./assets/screenshot-3.png" alt="screenshot">
+<img src="./assets/screenshot.png" width="150px" alt="screenshot">
+<img src="./assets/screenshot-2.png" width="150px" alt="screenshot">
+<img src="./assets/screenshot-3.png" width="150px" alt="screenshot">
