@@ -14,7 +14,7 @@
 
 ### Screenshots
 
-<div style="display: flex; flex-direction: row; gap: 20px">
+<div style="display: flex; flex-direction: row; gap: 20px;">
   <img src="./assets/screenshot.png" width="200px" alt="screenshot">
   <img src="./assets/screenshot-2.png" width="200px" alt="screenshot">
   <img src="./assets/screenshot-3.png" width="200px" alt="screenshot">
