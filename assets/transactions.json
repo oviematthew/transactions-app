@@ -2,169 +2,201 @@
   {
     "id": 1,
     "transaction": "Apple",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/833px-Apple_logo_black.svg.png",
     "price": 999.95,
     "date": "May 30, 2024",
     "location": "1004 Fanshawe Boulevard, London ON",
-    "item": "iPad Air"
+    "item": "iPad Air",
+    "transactionid": "4R9W2G3E1F6H"
   },
   {
     "id": 2,
     "transaction": "Samsung",
+    "img": "https://blog.logomaster.ai/hs-fs/hubfs/samsung-logo-1993.jpg?width=672&height=454&name=samsung-logo-1993.jpg",
     "price": 899.99,
     "date": "June 15, 2024",
     "location": "2103 Sunset Avenue, Los Angeles CA",
-    "item": "Galaxy Tab S8"
+    "item": "Galaxy Tab S8",
+    "transactionid": "4R7W2G471F6H"
   },
   {
     "id": 3,
     "transaction": "Microsoft",
+    "img": "https://pngimg.com/d/microsoft_PNG14.png",
     "price": 1199.99,
     "date": "July 5, 2024",
     "location": "4501 Market Street, San Francisco CA",
-    "item": "Surface Pro 8"
+    "item": "Surface Pro 8",
+    "transactionid": "4S9G2G3E1F7H"
   },
   {
     "id": 4,
     "transaction": "Google",
+    "img": "https://cdn.vox-cdn.com/thumbor/2ECtQus43_-tjqtlxy0WE8peSEQ=/0x0:2012x1341/1400x1050/filters:focal(1006x670:1007x671)/cdn.vox-cdn.com/uploads/chorus_asset/file/15483559/google2.0.0.1441125613.jpg",
     "price": 799.95,
     "date": "August 20, 2024",
     "location": "8022 Broadway Street, New York NY",
-    "item": "Pixelbook Go"
+    "item": "Pixelbook Go",
+    "transactionid": "4R9W2G3E1F6H"
   },
   {
     "id": 5,
     "transaction": "Dell",
+    "img": "https://static.vecteezy.com/system/resources/previews/021/514/718/non_2x/dell-logo-brand-computer-symbol-white-design-usa-laptop-illustration-with-blue-background-free-vector.jpg",
     "price": 1099.99,
     "date": "September 10, 2024",
     "location": "3031 Elm Street, Chicago IL",
-    "item": "XPS 13"
+    "item": "XPS 13",
+    "transactionid": "6Q7W3A24R9W2G"
   },
   {
     "id": 6,
     "transaction": "HP",
+    "img": "https://www.pngall.com/wp-content/uploads/13/HP-Logo-PNG-Images.png",
     "price": 749.99,
     "date": "October 5, 2024",
     "location": "7001 Maple Avenue, Houston TX",
-    "item": "HP Spectre x360"
+    "item": "HP Spectre x360",
+    "transactionid": "2G3E1FJ9F4S6A"
   },
   {
     "id": 7,
     "transaction": "Lenovo",
+    "img": "https://cdn.freebiesupply.com/logos/thumbs/2x/lenovo-2-logo.png",
     "price": 899.95,
     "date": "November 12, 2024",
     "location": "502 Pine Street, Seattle WA",
-    "item": "ThinkPad X1 Carbon"
+    "item": "ThinkPad X1 Carbon",
+    "transactionid": "3D8L2J9F4S6A"
   },
   {
     "id": 8,
     "transaction": "Asus",
+    "img": "https://banner2.cleanpng.com/20180628/bcr/kisspng-laptop-asus-logo-asus-logo-5b359b387dee13.1375741615302398005158.jpg",
     "price": 799.99,
     "date": "December 3, 2024",
     "location": "6001 Oak Lane, Philadelphia PA",
-    "item": "ZenBook Pro Duo"
+    "item": "ZenBook Pro Duo",
+    "transactionid": "6Q7W3A2E4R9T"
   },
   {
     "id": 9,
     "transaction": "Acer",
+    "img": "https://www.liblogo.com/img-logo/ac17043496-acer-logo--com-acer-logo.png",
     "price": 599.95,
     "date": "January 8, 2025",
     "location": "1000 Cedar Court, Phoenix AZ",
-    "item": "Swift 5"
+    "item": "Swift 5",
+    "transactionid": "8L4K7E2Q9W3A"
   },
   {
     "id": 10,
     "transaction": "Razer",
+    "img": "https://i.pinimg.com/originals/4f/5e/83/4f5e830aad019ebbb946552f7d8bf2f4.png",
     "price": 1299.99,
     "date": "February 20, 2025",
     "location": "1502 Walnut Street, Boston MA",
-    "item": "Razer Blade 15"
+    "item": "Razer Blade 15",
+    "transactionid": "2H6J4D9E7F5W"
   },
   {
     "id": 11,
     "transaction": "Huawei",
+    "img": "https://1000logos.net/wp-content/uploads/2018/10/Huawei-Logo-2006.png",
     "price": 899.95,
     "date": "March 15, 2025",
     "location": "4002 Pine Tree Lane, Miami FL",
-    "item": "MateBook X Pro"
+    "item": "MateBook X Pro",
+    "transactionid": "1F9G6R4D3L8J"
   },
   {
     "id": 12,
     "transaction": "Sony",
+    "img": "https://1000logos.net/wp-content/uploads/2021/05/Sony-logo.png",
     "price": 1099.99,
     "date": "April 5, 2025",
     "location": "2503 Cherry Avenue, Atlanta GA",
-    "item": "VAIO Z"
+    "item": "VAIO Z",
+    "transactionid": "3G8K9Q2A4W7E"
   },
   {
     "id": 13,
     "transaction": "LG",
+    "img": "https://images.squarespace-cdn.com/content/v1/502a8efb84ae42cbccf920c4/1585574686746-VCDIHSO21O76WR72WIAD/LG-Logo.png",
     "price": 999.99,
     "date": "May 22, 2025",
     "location": "3501 Magnolia Drive, Dallas TX",
-    "item": "LG Gram 17"
+    "item": "LG Gram 17",
+    "transactionid": "5H7F2J8D4S9L"
   },
   {
     "id": 14,
     "transaction": "Toshiba",
+    "img": "https://cdn.shopify.com/s/files/1/0558/6413/1764/files/Toshiba_Logo_Design_History_Evolution_9_1024x1024.jpg?v=1692902085",
     "price": 799.95,
     "date": "June 10, 2025",
     "location": "5500 Willow Lane, Denver CO",
-    "item": "Dynabook Portégé X30L"
+    "item": "Dynabook Portégé X30L",
+    "transactionid": "4R9W2G3E1F6H"
   },
   {
     "id": 15,
     "transaction": "Xiaomi",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Mi-logo-01.png/541px-Mi-logo-01.png",
     "price": 699.99,
     "date": "July 18, 2025",
     "location": "2004 Spruce Avenue, San Diego CA",
-    "item": "Mi Notebook Pro"
+    "item": "Mi Notebook Pro",
+    "transactionid": "9E5B3C6A8D7F"
   },
   {
     "id": 16,
     "transaction": "MSI",
+    "img": "https://banner2.cleanpng.com/20180417/zsw/kisspng-laptop-graphics-cards-video-adapters-msi-motherb-las-vegas-5ad623391a1d30.898643441523983161107.jpg",
     "price": 1199.95,
     "date": "August 5, 2025",
     "location": "9003 Pinecone Road, Minneapolis MN",
-    "item": "GS66 Stealth"
+    "item": "GS66 Stealth",
+    "transactionid": "1Y9U2G3E1F2K"
   },
   {
     "id": 17,
     "transaction": "Alienware",
+    "img": "https://i.pinimg.com/736x/82/c3/94/82c3946e8f5f7a7353b89d1340fbe2b6.jpg",
     "price": 1499.99,
     "date": "September 20, 2025",
     "location": "7502 Maplewood Drive, Detroit MI",
-    "item": "Alienware Area-51m"
+    "item": "Alienware Area-51m",
+    "transactionid": "9G3T2G1E1G6H"
   },
   {
     "id": 18,
     "transaction": "Fujitsu",
+    "img": "https://vetores.org/wp-content/uploads/fujitsu.png",
     "price": 999.95,
     "date": "October 15, 2025",
     "location": "8201 Oakwood Avenue, Portland OR",
-    "item": "Lifebook U939X"
+    "item": "Lifebook U939X",
+    "transactionid": "6J7W2G2E1F6H"
   },
   {
     "id": 19,
     "transaction": "Panasonic",
+    "img": "https://wallpapercave.com/wp/wp4771390.png",
     "price": 899.99,
     "date": "November 8, 2025",
     "location": "5005 Elmwood Lane, Indianapolis IN",
-    "item": "Toughbook 55"
+    "item": "Toughbook 55",
+    "transactionid": "3S9W2GTE1F6H"
   },
   {
     "id": 20,
     "transaction": "Vaio",
+    "img": "https://www.freevector.com/uploads/vector/preview/11661/FreeVector-Sony-Vaio.jpg",
     "price": 1099.95,
     "date": "December 25, 2025",
     "location": "7002 Chestnut Street, Orlando FL",
-    "item": "SX14"
-  },
-  {
-    "id": 21,
-    "transaction": "Microsoft",
-    "price": 1299.99,
-    "date": "January 10, 2026",
-    "location": "9601 Willow Street, Austin TX",
-    "item": "Surface Laptop 4"
+    "item": "SX14",
+    "transactionid": "6RJJ2G3E1G6H"
   }
 ]

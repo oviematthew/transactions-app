@@ -4,6 +4,7 @@ import {
   View,
   Text,
   FlatList,
+  Image,
   StyleSheet,
   TouchableOpacity,
 } from "react-native";
@@ -25,9 +26,12 @@ const TransactionsListScreen = ({ navigation }) => {
   const renderTransactionItem = ({ item }) => (
     <TouchableOpacity onPress={() => handleTransactionPress(item)}>
       <View style={styles.container}>
-        <View>
-          <Text style={styles.bigText}>{item.transaction}</Text>
-          <Text>{item.price}</Text>
+        <View style={styles.flex}>
+          <Image style={styles.img} src={item.img} />
+          <View>
+            <Text style={styles.bigText}>{item.transaction}</Text>
+            <Text>${item.price}</Text>
+          </View>
         </View>
         <View>
           <FontAwesome5
@@ -63,6 +67,17 @@ const styles = StyleSheet.create({
   bigText: {
     fontSize: 20,
     fontWeight: "700",
+  },
+  flex: {
+    display: "flex",
+    flexDirection: "row",
+    gap: "20px",
+  },
+  img: {
+    width: 40,
+    height: "auto",
+    objectFit: "fill",
+    alignItems: "center",
   },
 });
 
