@@ -16,6 +16,11 @@ const TransactionDetailScreen = ({ route }) => {
           </View>
 
           <View style={styles.container}>
+            <Text style={styles.text}>Transaction ID:</Text>
+            <Text style={styles.text}>{transaction.transactionid}</Text>
+          </View>
+
+          <View style={styles.container}>
             <Text style={styles.text}>Item:</Text>
             <Text style={styles.text}>{transaction.item}</Text>
           </View>

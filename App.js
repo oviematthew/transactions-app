@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet } from "react-native";
 import { FontAwesome5 } from "@expo/vector-icons";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
@@ -15,7 +15,7 @@ export default function App() {
     <NavigationContainer>
       <Tab.Navigator
         screenOptions={{
-          tabBarActiveTintColor: "#F05A24", // Hex color for the active label
+          tabBarActiveTintColor: "#F05A24",
         }}
       >
         <Tab.Screen
