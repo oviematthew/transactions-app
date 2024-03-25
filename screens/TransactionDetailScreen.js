@@ -1,4 +1,3 @@
-// TransactionDetailScreen.js
 import React from "react";
 import { View, Text, Image, StyleSheet, SafeAreaView } from "react-native";
 
