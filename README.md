@@ -22,6 +22,8 @@
 
 ### Screenshots
 
-<img src="./assets/screenshot.png" width="150px" alt="screenshot">
-<img src="./assets/screenshot-2.png" width="150px" alt="screenshot">
-<img src="./assets/screenshot-3.png" width="150px" alt="screenshot">
+<div style="display: flex; flex-direction: row;">
+  <img src="./assets/screenshot.png" width="200px" alt="screenshot">
+  <img src="./assets/screenshot-2.png" width="200px" alt="screenshot">
+  <img src="./assets/screenshot-3.png" width="200px" alt="screenshot">
+</div>
