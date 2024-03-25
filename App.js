@@ -14,13 +14,17 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Tab.Navigator>
+      <Tab.Navigator
+        screenOptions={{
+          tabBarActiveTintColor: "#F05A24", // Hex color for the active label
+        }}
+      >
         <Tab.Screen
           name="Transactions "
           options={{
             headerShown: false,
             tabBarIcon: () => (
-              <FontAwesome5 name="money-bill-wave" size={24} color="black" />
+              <FontAwesome5 name="money-bill-wave" size={24} color="#F05A24" />
             ),
           }}
         >
@@ -46,7 +50,7 @@ export default function App() {
           name="Summary"
           options={{
             tabBarIcon: () => (
-              <FontAwesome5 name="th-list" size={24} color="black" />
+              <FontAwesome5 name="th-list" size={24} color="#F05A24" />
             ),
           }}
           component={SummaryScreen}

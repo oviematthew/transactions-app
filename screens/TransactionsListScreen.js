@@ -35,9 +35,9 @@ const TransactionsListScreen = ({ navigation }) => {
         </View>
         <View>
           <FontAwesome5
-            name="arrow-right"
+            name="arrow-circle-right"
             size={24}
-            color="black"
+            color="#F05A24"
             onPress={() => handleTransactionPress(item)}
           />
         </View>
@@ -61,8 +61,10 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
+    backgroundColor: "#F8F8F8",
     padding: 15,
-    borderBottomWidth: 1,
+    borderBottomWidth: 2,
+    borderBottomColor: "white",
   },
   bigText: {
     fontSize: 20,
