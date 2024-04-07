@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import {
   View,
+  Alert,
   Text,
   TextInput,
   StyleSheet,
@@ -8,6 +9,10 @@ import {
 } from "react-native";
 import { Button } from "react-native-paper";
 import { SafeAreaView } from "react-navigation";
+
+// Import Firebase
+import { addDoc } from "firebase/firestore";
+import { dbCollection } from "../database/config";
 
 const AddTransaction = () => {
   const [transaction, setTransaction] = useState("");
@@ -17,9 +22,45 @@ const AddTransaction = () => {
   const [location, setLocation] = useState("");
   const [item, setItem] = useState("");
 
-  function AddNewTransaction() {
-    setTransaction;
+  function generateTransactionId() {
+    const characters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const idLength = 12;
+    let transactionId = "";
+
+    for (let i = 0; i < idLength; i++) {
+      const randomIndex = Math.floor(Math.random() * characters.length);
+      transactionId += characters[randomIndex];
+    }
+
+    return transactionId;
   }
+
+  const AddNewTransaction = async () => {
+    try {
+      const newTransactionId = generateTransactionId();
+      const docRef = await addDoc(dbCollection, {
+        transaction,
+        imgUrl,
+        price,
+        date,
+        location,
+        item,
+        transactionId: newTransactionId,
+      });
+
+      setTransaction("");
+      setImgUrl("");
+      setPrice("");
+      setDate("");
+      setLocation("");
+      setItem("");
+      Alert.alert("Transaction", "Transaction Added Successfully", [
+        { text: "OK" },
+      ]);
+    } catch (error) {
+      console.error("Error adding transaction:", error);
+    }
+  };
 
   return (
     <SafeAreaView>
@@ -44,7 +85,7 @@ const AddTransaction = () => {
       />
       <TextInput
         style={styles.input}
-        placeholder="Transaction Name"
+        placeholder="Transaction Date"
         onChangeText={setDate}
         value={date}
       />
