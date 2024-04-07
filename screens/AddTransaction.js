@@ -89,6 +89,7 @@ const styles = StyleSheet.create({
   buttonCont: {
     display: "flex",
     justifyContent: "center",
+    marginVertical: 10,
     alignItems: "center",
   },
   button: {
