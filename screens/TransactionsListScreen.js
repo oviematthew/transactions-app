@@ -15,6 +15,7 @@ import { load } from "../database/config";
 
 const TransactionsListScreen = ({ navigation }) => {
   const [transactions, setTransactions] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   //as component mounts set the transactions from the json file
   useEffect(() => {
@@ -22,9 +23,11 @@ const TransactionsListScreen = ({ navigation }) => {
       .then((transactions) => {
         // Update the state with the loaded tasks
         setTransactions(transactions);
+        setLoading(false);
       })
       .catch((error) => {
         console.error("Error loading tasks:", error);
+        setLoading(false);
       });
   }, []);
 
@@ -54,6 +57,14 @@ const TransactionsListScreen = ({ navigation }) => {
     </TouchableOpacity>
   );
 
+  if (loading) {
+    return (
+      <View style={styles.loadingContainer}>
+        <Text style={styles.loadingText}>Loading...</Text>
+      </View>
+    );
+  }
+
   return (
     <View>
       <FlatList data={transactions} renderItem={renderTransactionItem} />
@@ -70,6 +81,10 @@ const styles = StyleSheet.create({
     padding: 15,
     borderBottomWidth: 2,
     borderBottomColor: "white",
+  },
+  loadingText: {
+    textAlign: "center",
+    padding: 10,
   },
   bigText: {
     fontSize: 20,

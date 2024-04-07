@@ -9,18 +9,21 @@ import {
 } from "react-native";
 import { Button } from "react-native-paper";
 import { SafeAreaView } from "react-navigation";
+import { useNavigation } from "@react-navigation/native";
 
 // Import Firebase
 import { addDoc } from "firebase/firestore";
 import { dbCollection } from "../database/config";
 
-const AddTransaction = () => {
+const AddTransaction = ({ refreshTransactions }) => {
   const [transaction, setTransaction] = useState("");
   const [imgUrl, setImgUrl] = useState("");
   const [price, setPrice] = useState("");
   const [date, setDate] = useState("");
   const [location, setLocation] = useState("");
   const [item, setItem] = useState("");
+
+  const navigation = useNavigation();
 
   //Generate 11 character transactionID
   function generateTransactionId() {
@@ -57,7 +60,13 @@ const AddTransaction = () => {
       setLocation("");
       setItem("");
       Alert.alert("Transaction", "Transaction Added Successfully", [
-        { text: "OK" },
+        {
+          text: "OK",
+          onPress: () => {
+            navigation.navigate("Transactions");
+            refreshTransactions();
+          },
+        },
       ]);
     } catch (error) {
       console.error("Error adding transaction:", error);

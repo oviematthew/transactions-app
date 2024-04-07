@@ -1,22 +1,43 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { View, Text, StyleSheet } from "react-native";
-import transactionsData from "../assets/transactions.json";
+// Firebase Load
+import { load } from "../database/config";
 
 const SummaryScreen = () => {
-  const totalTransactions = transactionsData.length;
-  const totalAmount = transactionsData.reduce(
-    (acc, curr) => acc + curr.price,
-    0
+  const [transactions, setTransactions] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    load()
+      .then((loadedTransactions) => {
+        // Update the state with the loaded transactions
+        setTransactions(loadedTransactions);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error loading transactions:", error);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) {
+    return (
+      <View style={styles.loadingContainer}>
+        <Text style={styles.loadingText}>Loading...</Text>
+      </View>
+    );
+  }
+
+  const totalTransactions = transactions.length;
+  const totalAmount = transactions
+    .reduce((acc, curr) => acc + parseFloat(curr.price), 0)
+    .toFixed(2);
+
+  const highSpendingTransaction = transactions.reduce((prev, current) =>
+    parseFloat(prev.price) > parseFloat(current.price) ? prev : current
   );
-  const highSpendingTransaction = transactionsData.find(
-    (transaction) =>
-      transaction.price ===
-      Math.max(...transactionsData.map((transaction) => transaction.price))
-  );
-  const lowSpendingTransaction = transactionsData.find(
-    (transaction) =>
-      transaction.price ===
-      Math.min(...transactionsData.map((transaction) => transaction.price))
+  const lowSpendingTransaction = transactions.reduce((prev, current) =>
+    parseFloat(prev.price) < parseFloat(current.price) ? prev : current
   );
 
   return (
@@ -27,9 +48,7 @@ const SummaryScreen = () => {
       </View>
       <View style={styles.container}>
         <Text style={styles.boldText}>Balance</Text>
-        <Text style={styles.text}>
-          ${totalAmount.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-        </Text>
+        <Text style={styles.text}>${totalAmount}</Text>
       </View>
       <View style={styles.container}>
         <Text style={styles.boldText}>Highest Spending</Text>
@@ -50,6 +69,11 @@ const SummaryScreen = () => {
 };
 
 const styles = StyleSheet.create({
+  loadingContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
   container: {
     backgroundColor: "#F05A24",
     color: "#fff",
@@ -64,6 +88,10 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     width: "100%",
     justifyContent: "space-between",
+  },
+  loadingText: {
+    textAlign: "center",
+    padding: 10,
   },
   boldText: {
     color: "#fff",
