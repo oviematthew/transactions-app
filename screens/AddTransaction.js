@@ -15,15 +15,13 @@ import { useNavigation } from "@react-navigation/native";
 import { addDoc } from "firebase/firestore";
 import { dbCollection } from "../database/config";
 
-const AddTransaction = ({ refreshTransactions }) => {
+const AddTransaction = () => {
   const [transaction, setTransaction] = useState("");
   const [imgUrl, setImgUrl] = useState("");
   const [price, setPrice] = useState("");
   const [date, setDate] = useState("");
   const [location, setLocation] = useState("");
   const [item, setItem] = useState("");
-
-  const navigation = useNavigation();
 
   //Generate 11 character transactionID
   function generateTransactionId() {
@@ -62,10 +60,6 @@ const AddTransaction = ({ refreshTransactions }) => {
       Alert.alert("Transaction", "Transaction Added Successfully", [
         {
           text: "OK",
-          onPress: () => {
-            navigation.navigate("Transactions");
-            refreshTransactions();
-          },
         },
       ]);
     } catch (error) {
