@@ -22,6 +22,7 @@ const AddTransaction = () => {
   const [location, setLocation] = useState("");
   const [item, setItem] = useState("");
 
+  //Generate 11 character transactionID
   function generateTransactionId() {
     const characters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const idLength = 12;
@@ -35,6 +36,7 @@ const AddTransaction = () => {
     return transactionId;
   }
 
+  //Add new transaction
   const AddNewTransaction = async () => {
     try {
       const newTransactionId = generateTransactionId();

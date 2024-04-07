@@ -7,7 +7,7 @@ const TransactionDetailScreen = ({ route }) => {
     <SafeAreaView>
       <View style={{ padding: 16 }}>
         <View style={styles.imgView}>
-          <Image style={styles.img} src={transaction.img} />
+          <Image style={styles.img} src={transaction.imgUrl} />
         </View>
         <View>
           <View style={styles.container}>
@@ -17,7 +17,7 @@ const TransactionDetailScreen = ({ route }) => {
 
           <View style={styles.container}>
             <Text style={styles.text}>Transaction ID:</Text>
-            <Text style={styles.text}>{transaction.transactionid}</Text>
+            <Text style={styles.text}>{transaction.transactionId}</Text>
           </View>
 
           <View style={styles.container}>

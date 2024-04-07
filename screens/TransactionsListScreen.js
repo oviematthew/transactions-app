@@ -10,12 +10,22 @@ import {
 import transactionsData from "../assets/transactions.json";
 import { FontAwesome5 } from "@expo/vector-icons";
 
+// Firebase Load
+import { load } from "../database/config";
+
 const TransactionsListScreen = ({ navigation }) => {
   const [transactions, setTransactions] = useState([]);
 
   //as component mounts set the transactions from the json file
   useEffect(() => {
-    setTransactions(transactionsData);
+    load()
+      .then((transactions) => {
+        // Update the state with the loaded tasks
+        setTransactions(transactions);
+      })
+      .catch((error) => {
+        console.error("Error loading tasks:", error);
+      });
   }, []);
 
   const handleTransactionPress = (transaction) => {
@@ -26,7 +36,7 @@ const TransactionsListScreen = ({ navigation }) => {
     <TouchableOpacity onPress={() => handleTransactionPress(item)}>
       <View style={styles.container}>
         <View style={styles.flex}>
-          <Image style={styles.img} src={item.img} />
+          <Image style={styles.img} src={item.imgUrl} />
           <View>
             <Text style={styles.bigText}>{item.transaction}</Text>
             <Text>${item.price}</Text>
@@ -46,11 +56,7 @@ const TransactionsListScreen = ({ navigation }) => {
 
   return (
     <View>
-      <FlatList
-        data={transactions}
-        renderItem={renderTransactionItem}
-        keyExtractor={(item) => item.id.toString()}
-      />
+      <FlatList data={transactions} renderItem={renderTransactionItem} />
     </View>
   );
 };
