@@ -5,6 +5,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createStackNavigator } from "@react-navigation/stack";
 import TransactionsListScreen from "./screens/TransactionsListScreen";
 import TransactionDetailScreen from "./screens/TransactionDetailScreen";
+import AddTransactionScreen from "./screens/AddTransaction";
 import SummaryScreen from "./screens/SummaryScreen";
 
 const Tab = createBottomTabNavigator();
@@ -53,6 +54,15 @@ export default function App() {
             ),
           }}
           component={SummaryScreen}
+        />
+        <Tab.Screen
+          name="Add"
+          options={{
+            tabBarIcon: () => (
+              <FontAwesome5 name="plus" size={24} color="#F05A24" />
+            ),
+          }}
+          component={AddTransactionScreen}
         />
       </Tab.Navigator>
     </NavigationContainer>
