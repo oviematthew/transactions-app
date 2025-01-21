@@ -3,7 +3,7 @@ import { getFirestore, getDocs, collection } from "firebase/firestore";
 
 //Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBKbxnU_RkxBiQEs92vPFqu9bU3AEEhPPQ",
+  apiKey: process.env.API_KEY,
   authDomain: "info6127-1146253-class.firebaseapp.com",
   databaseURL: "https://info6127-1146253-class-default-rtdb.firebaseio.com",
   projectId: "info6127-1146253-class",
